@@ -1,12 +1,12 @@
 module.exports = {
   facebook: {
-    appId: '302305353609153',
-    secret: '2632322f05241cb2d07fa31765e3c5d4',
+    appId: '406796973427909',
+    secret: 'c29395157a0a56239ce6ba25db92f823',
     callbackURL: 'http://localhost:3000/auth/facebook/callback'
   },
   google: {
-    appId: '705966156450-mq8j847ugrl37jk4jraggf279qvi4qil.apps.googleusercontent.com',
-    secret: 'VInnQimkPxfurIeBGWY0m6V4',
+    appId: '379051197704-kg34psng87h2f7dolcv3g15r6hu0qvuc.apps.googleusercontent.com',
+    secret: 'HayUH7A0feebpdbsnXv_4R6j',
     callbackURL: 'http://localhost:3000/auth/google/callback'
   },
   mailToken: 'dfksaldjfklsajfdklasddkfjas',
@@ -14,8 +14,8 @@ module.exports = {
     session: 'backend-secret'
   },
   twitter: {
-    appId: 'L1Xoi0yaENMepWuh0mKVUWMWU',
-    secret: 'gn44gkPT8W8JeVjWVgFtq8cEBXYT7qxFYBo24iYnAK2Tm5Zfka',
+    appId: 'uqupgJquiAojFTdEPVVm22PMK',
+    secret: 'mHc7hspfMtl11SNqoBe2OMpTiuJWwUnRoa0eqL6wshuAJ11skN',
     callbackURL: 'http://localhost:3000/auth/twitter/callback'
   },
   mongoUrl: "mongodb://localhost:27017/soccer-db",
