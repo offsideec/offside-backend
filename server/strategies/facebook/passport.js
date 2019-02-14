@@ -12,9 +12,7 @@ export function setup(User, config) {
       'displayName',
       'emails',
       'name',
-      'gender',
-      'user_birthday',
-      'cover'
+      'gender'
     ]
   },
     function (accessToken, refreshToken, profile, done) {
