@@ -1,11 +1,11 @@
 import * as mongoose from 'mongoose';
-import { Mockgoose } from 'mockgoose-fix';
+import MongoMemoryServer from 'mongodb-memory-server';
 
-let mockgoose = new Mockgoose(mongoose);
-mockgoose.helper.setDbVersion('3.4.3');
+const mongoServer = new MongoMemoryServer();
+
 
 export function connectDB(t, done) {
-  mockgoose.prepareStorage().then(() => {
+  mongoServer.getConnectionString().then((mongoUri) => {
     mongoose.connect('mongodb://localhost:27017/soccer-db-test', { useMongoClient: true }, (err) => {
       done(err);
     });
@@ -13,7 +13,5 @@ export function connectDB(t, done) {
 }
 
 export function dropDB(t) {
-  mockgoose.helper.reset().then(err => {
-    if (err) t.fail('Unable to reset test database');
-  });
+  mongoServer.stop();
 }
