@@ -11,7 +11,7 @@ const router = express.Router();
  * @apiName GetUsers
  * @apiGroup User
  */
-router.get('/', UserController.index);
+router.get('/', auth.isAuthenticated(), UserController.index);
 
 /**
  * @api {delete} /users/:id Delete user

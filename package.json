@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/offsideec/offside-backend"
+  },
   "scripts": {
     "start": "npm-run-all --parallel init:server lint:watch",
     "debug": "nodemon --exec babel-node server/server.js --debug",
@@ -52,7 +56,7 @@
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-polyfill": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
     "eslint": "^4.13.1",
     "eslint-plugin-import": "^2.8.0",
     "eslint-watch": "^3.1.3",
